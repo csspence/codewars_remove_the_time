@@ -10,6 +10,18 @@ Write a function, shortenToDate, that takes the Website date/time in its origina
 Assume shortenToDate's input will always be a string, e.g. "Friday May 2, 7pm". Assume shortenToDate's output will be the shortened string, e.g., "Friday May 2".
 */
 
-function shortenToDate(longDate) {
-  // your code here
+const shortenToDate = (longDate) => {
+  let subtract;
+  let spaces = 0
+  for(let i = longDate.length; i > long; i--) {
+    if(longDate[i] !== ',') {
+      spaces++;
+    }
+    if(longDate[i] === ',') {
+      spaces++;
+      break;
+    }
+  }
+
+  return longDate.slice(0, subtract);
 }
