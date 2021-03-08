@@ -22,6 +22,6 @@ const shortenToDate = (longDate) => {
       break;
     }
   }
-
+  subtract = lonDate.length - spaces;
   return longDate.slice(0, subtract);
 }
